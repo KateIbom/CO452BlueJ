@@ -7,6 +7,8 @@ import java.util.*;
  * @author Michael Kölling and David Barnes
  * @version 2016.02.29
  * Modified by Derek Peacock (2017650)
+ * Modified by Kate Turton
+ * Date 05/Oct/2020
  */
 public class Student
 {

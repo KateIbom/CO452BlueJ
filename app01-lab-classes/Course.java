@@ -1,0 +1,35 @@
+
+/**
+ * Write a description of class Course here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Course
+{
+    // Course Code
+    private String module No;
+    // Course Title
+    private string Title;
+
+    /**
+     * Constructor for objects of class Course
+     */
+    public Course(String moduleNumber, Stringf title)
+    {
+        this.moduleNumber = moduleNumber;
+        this.title = title;
+    }
+
+    /**
+     * AMethod that returns module number
+     *
+     * @return moduleNumber
+     
+     */
+    public String getmoduleNumber()
+    {
+        // put your code here
+        return moduleNo;
+    }
+}

@@ -19,7 +19,7 @@ public class Student
     // the amount of credits for study taken so far
     private int credits;
     // object of course class
-    private Course;
+    private Course course;
     /**
      * Create a new student with a given name and ID number.
      */
@@ -70,7 +70,17 @@ public class Student
     {
         return credits;
     }
-    /
+    
+   
+    /**
+     * Assign parameter course to field course
+     */
+    public void addCourse(Course course)
+    {
+        this.course = course;
+    }
+    
+    
     /**
      * Return the login name of this student. The login name is a combination
      * of the first four characters of the student's name and the first three

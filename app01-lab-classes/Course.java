@@ -8,14 +8,14 @@
 public class Course
 {
     // Course Code
-    private String module No;
+    private String moduleNumber;
     // Course Title
-    private string Title;
+    private String Title;
 
     /**
      * Constructor for objects of class Course
      */
-    public Course(String moduleNumber, Stringf title)
+    public Course(String moduleNumber, String title)
     {
         this.moduleNumber = moduleNumber;
         this.title = title;
@@ -30,6 +30,6 @@ public class Course
     public String getmoduleNumber()
     {
         // put your code here
-        return moduleNo;
+        return moduleNumber;
     }
 }

@@ -9,7 +9,8 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Kate Turton
+ * @version 2020.10.11
  */
 public class TicketMachine
 {
@@ -59,7 +60,7 @@ public class TicketMachine
         }
         else 
         {
-            System.out.println("Use a positive amount rather than: " +
+            System.out.println("10 " +
                                amount);
         }
     }

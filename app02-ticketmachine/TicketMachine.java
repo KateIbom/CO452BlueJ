@@ -20,15 +20,40 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
+    // The destinations
+    private Ticket aylesburyTicket;
+    
+    private Ticket amershamTickets;
+    
+    private Ticket highwycombeTickets;
+    
 
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
-        price = cost;
+        
         balance = 0;
         total = 0;
+        
+        
+        aylesburyTicket = new Ticket("Aylesbury", 220);
+        issuedTicket = null;
+        
+        amershamTicket = new Ticket("Amersham", 300);
+        issuedTicket = null;
+        
+        highwycombeTicket = new Ticket("High Wycombe", 330);
+        issuedTicket = null;
+        
+        
+        
+        
+        
+        
+        
     }
 
     /**
@@ -72,6 +97,13 @@ public class TicketMachine
      */
     public void printTicket()
     {
+        // must remove later
+        
+        int price = 220;
+        int price = 300;// remove later
+        int price = 330;// remove later 
+        
+        
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
@@ -106,4 +138,22 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
+    
+    public void printAllTickets()
+    {
+       System.out.println("The following three destinations are available");
+       aylesburyTicket.print(); 
+       System.out.println("Please select your destination ticket > ");
+       
+       amershamTicket.print();
+       highwycombe.print();
+       
+    }
+    
+   
+    
+    
+    
+    
+    
 }

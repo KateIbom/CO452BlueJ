@@ -1,18 +1,20 @@
-
+import java.util.Date;
 /**
- * Create code for destinations under method to assign each location within objects.
- *
+ * This class will contain information about a ticket
+ * including the journey destination, price and the 
+ * date and time of purchase
  * @author Kate Turton
  * @version 13/10/2020
  */
 public class Ticket
 {
-    // instance variables - replace the example below with your own
+    // These are the Fields, Attributes or Variables
     private String destination;
     
+    // Currency in pence
     private int price;
     
-    private String date;
+    private Date datePurchased;
 
     /**
      * Constructor for objects of class Ticket
@@ -22,18 +24,34 @@ public class Ticket
         // initialise instance variables
         this.destination = destination;
         this.price = price;
-        this.date = date;
+        datePurchased = new Date();
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public void sampleMethod()
+    public int getPrice()
     {
-        // put your code here
+       return price;
+      
+    }
+    
+    public String getDestination()
+    {
+        return destination;
+    }
+    
+    public Date getdatePurchased()
+    {
+        return datePurchased;
+    }
+    
+    
+    
+    public void print()
+    {
+        System.out.print("Ticket to" + destination);
+        System.out.print("" + price + "pence");
+        System.out.print(datePurchased);
+        System.out.println();
         
     }
+
+   
 }

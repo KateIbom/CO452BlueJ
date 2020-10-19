@@ -28,6 +28,8 @@ public class TicketMachine
     
     private Ticket highwycombeTickets;
     
+    private Ticket issuedTicket;
+    
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -103,13 +105,13 @@ public class TicketMachine
         int price = 300;// remove later
         int price = 330;// remove later 
         
-        
+        int price = issuedTicket.getprice ();
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
-            System.out.println("# Ticket");
+            issuedTicket.print();
             System.out.println("# " + price + " cents.");
             System.out.println("##################");
             System.out.println();
@@ -150,9 +152,35 @@ public class TicketMachine
        
     }
     
-   
+    public void selectAylesburyTicket()
+    {
+        issuedTicket = aylesburyTicket;
+    }
     
+    public void selectamershamTicket()
+    {
+        issuedTicket = amershamTicket;
+    }
     
+    public void selecthighwycombeTicket()
+    {
+        issuedTicket = highwycombeTicket;
+    }
+    
+    public void insert20pcoin()
+    {
+        balance = balance +20;
+    }
+    
+    public void insert10pcoin()
+    {
+        balance = balance +10;
+    }
+    
+    public void insert100pcoin()
+    {
+        balance = balance +100;
+    }
     
     
     

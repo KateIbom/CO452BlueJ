@@ -1,4 +1,7 @@
 #BlueJ package file
+dependency1.from=TicketMachine
+dependency1.to=Ticket
+dependency1.type=UsesDependency
 editor.fx.0.height=734
 editor.fx.0.width=1294
 editor.fx.0.x=-7
@@ -13,7 +16,7 @@ package.editor.x=10
 package.editor.y=10
 package.frame.height=734
 package.frame.width=1294
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
 package.showUses=true
@@ -28,8 +31,8 @@ target1.name=Ticket
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
-target1.x=200
-target1.y=10
+target1.x=240
+target1.y=130
 target2.height=50
 target2.name=TicketMachine
 target2.showInterface=false

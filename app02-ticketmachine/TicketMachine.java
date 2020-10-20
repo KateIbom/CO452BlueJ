@@ -24,9 +24,9 @@ public class TicketMachine
     // The destinations
     private Ticket aylesburyTicket;
     
-    private Ticket amershamTickets;
+    private Ticket amershamTicket;
     
-    private Ticket highwycombeTickets;
+    private Ticket highwycombeTicket;
     
     private Ticket issuedTicket;
     
@@ -41,13 +41,13 @@ public class TicketMachine
         total = 0;
         
         
-        aylesburyTicket = new Ticket("Aylesbury", 220);
+        aylesburyTicket = new Ticket("Aylesbury", 220, "2nd September 2020");
         issuedTicket = null;
         
-        amershamTicket = new Ticket("Amersham", 300);
+        amershamTicket = new Ticket("Amersham", 300,"3rd September 2020");
         issuedTicket = null;
         
-        highwycombeTicket = new Ticket("High Wycombe", 330);
+        highwycombeTicket = new Ticket("High Wycombe", 330,"16th October 2020");
         issuedTicket = null;
         
         
@@ -102,10 +102,9 @@ public class TicketMachine
         // must remove later
         
         int price = 220;
-        int price = 300;// remove later
-        int price = 330;// remove later 
         
-        int price = issuedTicket.getprice ();
+        
+        
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
@@ -148,13 +147,13 @@ public class TicketMachine
        System.out.println("Please select your destination ticket > ");
        
        amershamTicket.print();
-       highwycombe.print();
+       highwycombeTicket.print();
        
     }
     
     public void selectAylesburyTicket()
     {
-        issuedTicket = aylesburyTicket;
+        issuedTicket = aylesburyTicket; //print tickets for this destination
     }
     
     public void selectamershamTicket()

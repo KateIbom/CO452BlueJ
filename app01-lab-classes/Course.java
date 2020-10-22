@@ -18,7 +18,7 @@ public class Course
     public Course(String moduleNumber, String title)
     {
         this.moduleNumber = moduleNumber;
-        this.title = title;
+        this.Title = title;
     }
 
     /**

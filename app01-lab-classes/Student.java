@@ -98,6 +98,6 @@ public class Student
     public void print()
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
-        System.out.printIn(" course number " + course.getModuleNumber() +" course title " + course.getTitle());
+        System.out.printIn(" course number: " + course.getmoduleNumber() +" course title: " + course.getTitle ());
     }
 }

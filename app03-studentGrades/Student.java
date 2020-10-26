@@ -85,10 +85,10 @@ public class Student
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
+    /**
     
-    
-    // This method will enrol the student unto the course
-     
+    * This method will enrol the student unto the course
+    */
     public void enrolOnCourse (Course course)
     
     {

@@ -25,5 +25,12 @@ public class Module
         mark = 0;
     }
 
+    public void awardMark(int mark)
+    {
+        this.mark = mark;
+    
+    }
+    
+    
     
 }

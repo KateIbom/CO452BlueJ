@@ -14,6 +14,8 @@ public class Module
     private String codeNo;
     
     private int mark;
+    
+    private int credit;
     /**
      * Constructor for objects of class Module
      */
@@ -23,14 +25,35 @@ public class Module
         this.codeNo = codeNo;
         
         mark = 0;
+        credit = 15;
     }
 
+    /**
+     * method to set mark from class module
+     */
+    
     public void awardMark(int mark)
     {
         this.mark = mark;
     
     }
     
+    /** 
+     * method to get marks from class module
+     */
     
+    public int getMark()
+    {
+        return mark;
     
+    }
+    
+    /**
+     * print method to have output
+     */
+    public void print()
+    
+    {
+        System.out.println("Module: " + title + " " + codeNo +  " Mark = " + mark);
+    }
 }

@@ -49,11 +49,28 @@ public class Module
     }
     
     /**
+     * method to get code number
+     */
+    
+    public String getCodeNo()
+    {
+        return codeNo;
+    }
+    
+    /**
      * print method to have output
      */
     public void print()
     
     {
         System.out.println("Module: " + title + " " + codeNo +  " Mark = " + mark);
+    }
+    
+    /**
+     * Get method property title
+     */
+    public String getTitle()
+    {
+        return this.title;
     }
 }

@@ -20,10 +20,23 @@ public class Course
     /**
      * Constructor for objects of class Course
      */
-    public Course(String moduleNumber, String title)
+    public Course(String codeNumber, String title)
     {
-        this.moduleNumber = moduleNumber;
+        this.codeNo = codeNo;
         this.Title = title;
+        
+       
+    }
+    /**
+     * method to create module
+     */
+    
+    public void createModules()
+    {
+        module1 = new Module ("CO452" , "Programming Concepts");
+        module2 = new Module ("CO450" , "Computer Architecture");
+        module3 = new Module ("CO454" , "Digital Technology");
+        module4 = new Module ("CO455" , "Web Development");
     }
     
     
@@ -52,8 +65,19 @@ public class Course
         {
             this.module4 = module;
         }
+     
+     /**
+         * set mark method
+         */
         
+     public void setMark(int mark, String codeNo )
     
+      {
+           if(module1.getCodeNo() == codeNo)
+           {
+               module1.awardMark(mark);
+               
+           }   
     }
     
     

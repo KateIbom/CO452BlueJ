@@ -2,8 +2,8 @@
 /**
  * Write a description of class Module here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Kate Turton
+ * @version 26/10/2020
  */
 public class Module
 {
@@ -61,7 +61,7 @@ public class Module
      * print method to have output
      */
     public void print()
-    
+    // need to include an array list to avoid printing individual modules
     {
         System.out.println("Module: " + title + " " + codeNo +  " Mark = " + mark);
     }

@@ -8,7 +8,7 @@
 public class Course
 {
     // Course Code
-    private String moduleNumber;
+    private String codeNo;
     // Course Title
     private String Title;
     
@@ -65,7 +65,7 @@ public class Course
         {
             this.module4 = module;
         }
-     
+    }
      /**
          * set mark method
          */
@@ -92,6 +92,6 @@ public class Course
     public String getmoduleNumber()
     {
         // put your code here
-        return moduleNumber;
+        return codeNo;
     }
 }

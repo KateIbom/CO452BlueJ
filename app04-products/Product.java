@@ -93,6 +93,7 @@ public class Product
     public void sell(int amount)
     {
         if(quantity >= amount && quantity > 0) 
+        
         {
             quantity -= amount;
             System.out.println("Sold" + amount + " of " + name);

@@ -152,7 +152,7 @@ public class StockManager
         }
     }
     /**
-     * Print heading
+     * Print heading formatting
      * 
      */
     public void printheading()

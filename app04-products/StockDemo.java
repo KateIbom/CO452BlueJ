@@ -88,7 +88,9 @@ public class StockDemo
         }
     
     }
-   
+   /**
+    * method to sell product usinf a loop 
+    */
     private void demoSell()
     {
         printHeading("sell");
@@ -104,6 +106,9 @@ public class StockDemo
     
     }
     
+    /**
+     * improve output formatting 
+     */
     public void printHeading(String verb)
     
     {

@@ -1,0 +1,31 @@
+stockDem1.demoDelivery();
+101: Audi A4 Avanti stock level: 0
+102: BMW 6 Series stock level: 0
+103: Ford Cougar stock level: 0
+104: Honda JazzSPORT stock level: 0
+105: Jaguar C-Type stock level: 0
+106: Land Rover Discovery Sport stock level: 0
+107: Porsche Spyder stock level: 0
+108: Tayota Auris stock level: 0
+109: Nissan Cuber stock level: 0
+110: Vauhall Astra stock level: 0
+Product Deliveries : 101: Audi A4 Avanti stock level: 5
+Product Deliveries : 102: BMW 6 Series stock level: 3
+Product Deliveries : 103: Ford Cougar stock level: 4
+Product Deliveries : 104: Honda JazzSPORT stock level: 6
+Product Deliveries : 105: Jaguar C-Type stock level: 2
+Product Deliveries : 106: Land Rover Discovery Sport stock level: 6
+Product Deliveries : 107: Porsche Spyder stock level: 2
+Product Deliveries : 108: Tayota Auris stock level: 4
+Product Deliveries : 109: Nissan Cuber stock level: 4
+Product Deliveries : 110: Vauhall Astra stock level: 3
+101: Audi A4 Avanti stock level: 5
+102: BMW 6 Series stock level: 3
+103: Ford Cougar stock level: 4
+104: Honda JazzSPORT stock level: 6
+105: Jaguar C-Type stock level: 2
+106: Land Rover Discovery Sport stock level: 6
+107: Porsche Spyder stock level: 2
+108: Tayota Auris stock level: 4
+109: Nissan Cuber stock level: 4
+110: Vauhall Astra stock level: 3

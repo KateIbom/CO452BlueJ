@@ -76,21 +76,40 @@ public class Product
                                " with a non-positive amount: " + amount);
         }
     }
+    
+    /**
+     * Set a new name for the products
+     */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    
 
     /**
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sell(int amount)
     {
-        if(quantity > 0) 
+        if(quantity >= amount && quantity > 0) 
         {
-            quantity--;
+            quantity -= amount;
+            System.out.println("Sold" + amount + " of " + name);
         }
-        else 
+        
+        else if (amount > quantity && quantity > 0)
+        
         {
-            System.out.println(
-                "Attempt to sell an out of stock item: " + name);
+            System.out.println("Insufficient stock level = " + quantity + "amount ordered = " + amount);
+            quantity = 0;
         }
+        
+        else
+        {
+            System.out.println("Attempt to sell an out of stock item: " + name);
+        
+        }
+        
     }
 }

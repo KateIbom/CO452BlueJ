@@ -27,6 +27,16 @@ public class StockManager
     public void addProduct(Product item)
     {
         stock.add(item);
+       
+    }
+    
+    /**
+     * Remove a product from the list 
+     * @param item The item to be removed by ID
+     */
+    public void removeProduct(int id)
+    {
+        stock.remove(id);
     }
     
     /**
@@ -35,8 +45,67 @@ public class StockManager
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void delivery(int id, int amount)
+    public void deliverProduct(int id, int amount)
     {
+        Product product = findProduct(id);
+        if (product != null)
+        {
+            product.increaseQuantity(amount);
+            System.out.println("Product Deliveries : " + product);
+        }
+        
+        else
+        {
+            System.out.println("Product ID" + id + "Not Found !!!");
+        }
+        
+        
+        
+    }
+    
+    /**
+     * Sell one of the given item.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int id, int amount)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null) 
+        {
+            printDetails(id);
+            product.sell(amount);
+            printDetails(id);
+        }
+        
+        else
+        {
+            System.out.println( "product not found" ); 
+        }
+    }
+    
+    
+    /**
+     * Show details of the given product. If found,
+     * its name and stock quantity will be shown.
+     * @param id The ID of the product to look for.
+     */
+    public void printDetails(int id)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null) 
+        {
+            System.out.println( "Available stock : " +product.getQuantity());
+            
+            System.out.println(product);
+        }
+        
+        else
+        {
+            System.out.println( " product not found");
+        }
     }
     
     /**
@@ -46,6 +115,15 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
+      
+        for(Product product : stock)
+        {
+            if(product.getID() == id)
+            {
+                return product;
+            }
+        }
+        
         return null;
     }
     
@@ -64,7 +142,24 @@ public class StockManager
     /**
      * Print details of all the products.
      */
-    public void printProductDetails()
+    public void printAllProducts()
     {
+        printheading();
+        for(Product product : stock)
+        {
+     
+            System.out.println(product);
+        }
+    }
+    /**
+     * Print heading
+     * 
+     */
+    public void printheading()
+    {
+        System.out.println("\n====================================");
+        
+        System.out.println("Kate's Stock List");
+        System.out.println("\n====================================\n");
     }
 }

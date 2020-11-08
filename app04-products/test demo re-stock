@@ -1,0 +1,66 @@
+manager.delivery(101, 4);
+Product Deliveries : 101: Audi A4 Avanti stock level: 4
+manager.sellProduct(101);
+101: Audi A4 Avanti stock level: 4
+101: Audi A4 Avanti stock level: 3
+manager.delivery(102, 3);
+Product Deliveries : 102: BMW 6 Series stock level: 3
+manager.sellProduct(6);
+manager.delivery(105, 2);
+Product Deliveries : 105: Jaguar C-Type stock level: 2
+manager.sellProduct(1);
+manager.delivery(104, 4);
+Product Deliveries : 104: Honda JazzSPORT stock level: 4
+manager.sellProduct(3);
+manager.delivery(106, 5);
+Product Deliveries : 106: Land Rover Discovery Sport stock level: 5
+manager.sellProduct(3);
+manager.delivery(110, 8);
+Product Deliveries : 110: Vauhall Astra stock level: 8
+manager.sellProduct(5);
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+stockDem1.runDemo();
+101: Audi A4 Avanti stock level: 0
+102: BMW 6 Series stock level: 0
+103: Ford Cougar stock level: 0
+104: Honda JazzSPORT stock level: 0
+105: Jaguar C-Type stock level: 0
+106: Land Rover Discovery Sport stock level: 0
+107: Porsche Spyder stock level: 0
+108: Tayota Auris stock level: 0
+109: Nissan Cuber stock level: 0
+110: Vauhall Astra stock level: 0
+101: Audi A4 Avanti stock level: 0
+102: BMW 6 Series stock level: 0
+103: Ford Cougar stock level: 0
+104: Honda JazzSPORT stock level: 0
+105: Jaguar C-Type stock level: 0
+106: Land Rover Discovery Sport stock level: 0
+107: Porsche Spyder stock level: 0
+108: Tayota Auris stock level: 0
+109: Nissan Cuber stock level: 0
+110: Vauhall Astra stock level: 0
+Attempt to restock Audi A4 Avanti with a non-positive amount: 0
+Product Deliveries : 101: Audi A4 Avanti stock level: 0
+Product Deliveries : 102: BMW 6 Series stock level: 1
+Product Deliveries : 103: Ford Cougar stock level: 2
+Product Deliveries : 104: Honda JazzSPORT stock level: 3
+Product Deliveries : 105: Jaguar C-Type stock level: 4
+Product Deliveries : 106: Land Rover Discovery Sport stock level: 5
+Product Deliveries : 107: Porsche Spyder stock level: 6
+Product Deliveries : 108: Tayota Auris stock level: 7
+Product Deliveries : 109: Nissan Cuber stock level: 8
+Product Deliveries : 110: Vauhall Astra stock level: 9
+Product ID111Not Found !!!
+Product ID112Not Found !!!
+101: Audi A4 Avanti stock level: 0
+102: BMW 6 Series stock level: 1
+103: Ford Cougar stock level: 2
+104: Honda JazzSPORT stock level: 3
+105: Jaguar C-Type stock level: 4
+106: Land Rover Discovery Sport stock level: 5
+107: Porsche Spyder stock level: 6
+108: Tayota Auris stock level: 7
+109: Nissan Cuber stock level: 8
+110: Vauhall Astra stock level: 9

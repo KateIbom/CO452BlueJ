@@ -1,0 +1,11 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220, "25 March 2019");
+Ticket ticket2 = new Ticket("Amersham", 300, "12 March 2020");
+Ticket ticket3 = new Ticket("High Wycombe", 330, "14 February 2020");
+ticket1.getDestination()
+    returned String "Aylesbury"
+ticket1.print();
+Ticket toAylesbury220penceMon Nov 09 08:52:07 GMT 2020
+ticket2.print();
+Ticket toAmersham300penceMon Nov 09 08:53:08 GMT 2020
+ticket3.print();
+Ticket toHigh Wycombe330penceMon Nov 09 08:54:04 GMT 2020

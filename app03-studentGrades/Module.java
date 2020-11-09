@@ -16,6 +16,10 @@ public class Module
     private int mark;
     
     private int credit;
+    
+    private boolean completed;
+    
+    private boolean passed;
     /**
      * Constructor for objects of class Module
      */
@@ -24,8 +28,9 @@ public class Module
         this.title = title;
         this.codeNo = codeNo;
         
-        mark = 0;
+        mark = -1;
         credit = 15;
+        completed = false;
     }
 
     /**
@@ -49,12 +54,34 @@ public class Module
     }
     
     /**
-     * method to get code number
+     * this will return credits for the course
+     */
+    public int getCredit()
+    {
+        return credit;
+    }
+    
+    /**
+     * this will return the module code number
      */
     
     public String getCodeNo()
     {
         return codeNo;
+    }
+    
+    /**
+     * module has been completed if it has been awarded a mark even if the mark is zero
+     */
+    public boolean isCompleted()
+    {
+        if (mark >= 40)
+        {
+            credit = 15;
+            return true;
+        }
+        
+        return false;
     }
     
     /**

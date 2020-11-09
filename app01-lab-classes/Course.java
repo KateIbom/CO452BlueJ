@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Course here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * input information for course details
+ * Kate Turton
+ * 5 October 2020
  */
 public class Course
 {
@@ -20,7 +19,7 @@ public class Course
         this.moduleNumber = moduleNumber;
         this.Title = title;
     }
-
+    
     /**
      * AMethod that returns module number
      *

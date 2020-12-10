@@ -155,9 +155,9 @@ public class StockApp
         System.out.println();
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
-        System.out.println("    Deliver:    Deliver a quantity of product");
-        System.out.println("    Sell:   a quantity of product");
-        System.out.println("    Search:    ");
+        System.out.println("    Deliver:    Quantity of product");
+        System.out.println("    Sell:       Quantity of product");
+        System.out.println("    Search:     Products by Name");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
@@ -177,9 +177,10 @@ public class StockApp
     private void printHeading()
     {
         //System.out.println(CLEAR_CODE);
-        System.out.println("******************************");
+        
+        System.out.println("\n******************************");
         System.out.println(" Stock Management Application ");
         System.out.println("    App05: Kate Turton");
-        System.out.println("******************************");
+        System.out.println("******************************\n");
     }
 }

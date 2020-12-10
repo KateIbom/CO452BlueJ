@@ -37,7 +37,14 @@ public class StockManager
      */
     public void removeProduct(int id)
     {
-        stock.remove(id);
+        Product product = findProduct(id);
+        
+        if (product != null)
+        {
+            stock.remove(product);
+            System.out.println("Product Removed : " + product);
+        }
+                
     }
     
     public void renameProduct(String name, int id)

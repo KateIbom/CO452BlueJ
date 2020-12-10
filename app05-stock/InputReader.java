@@ -50,8 +50,18 @@ public class InputReader
      */
     public int getInt(String prompt)
     {
-        System.out.print(prompt);         // print prompt
-        int number = reader.nextInt();
+        int number = 0;
+        boolean isValid = false;
+        
+        while(!isValid)
+        {
+            System.out.println(prompt);         // print prompt
+            number = reader.nextInt();
+            if(number > 0)
+            {
+                isValid = true;
+            }
+        }
 
         return number;
     }

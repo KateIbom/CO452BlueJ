@@ -42,7 +42,7 @@ public class StockApp
 
             String choice = input.getString("Please enter your choice > "). toLowerCase();
 
-            if(choice.equals ("QUIT"))
+            if(choice.equals ("quit"))
                 finished = true;
             else
                 executeMenuChoice(choice);
@@ -54,6 +54,10 @@ public class StockApp
         if(choice.equals(ADD))
         {
             addProduct();
+        }
+        else if(choice.equals(REMOVE))
+        {
+            removeProduct();
         }
         else if(choice.equals(PRINT_ALL))
         {
@@ -172,7 +176,7 @@ public class StockApp
      */
     private void printHeading()
     {
-        System.out.println(CLEAR_CODE);
+        //System.out.println(CLEAR_CODE);
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
         System.out.println("    App05: Kate Turton");

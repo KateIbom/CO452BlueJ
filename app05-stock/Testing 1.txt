@@ -1,0 +1,146 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+
+Remove product
+
+
+Please enter product ID
+
+101
+Product Removed : 101: Audi A4 Avanti stock level: 0
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Please enter your choice > deliver
+
+Please enter product ID
+
+102
+
+Please enter the amount
+
+20
+Delivery of product
+Product Deliveries : 102: BMW 6 Series stock level: 20
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Please enter your choice > sell
+
+Please enter product ID
+
+102
+
+Please enter the amount
+
+2
+Sell product
+Available stock : 20
+102: BMW 6 Series stock level: 20
+Sold 2 of BMW 6 Series
+Available stock : 18
+102: BMW 6 Series stock level: 18
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Please enter your choice > printall
+
+====================================
+Kate's Stock List
+
+====================================
+
+102: BMW 6 Series stock level: 18
+103: Ford Cougar stock level: 0
+104: Honda JazzSPORT stock level: 0
+105: Jaguar C-Type stock level: 0
+106: Land Rover Discovery Sport stock level: 0
+107: Porsche Spyder stock level: 0
+108: Tayota Auris stock level: 0
+109: Nissan Cuber stock level: 0
+110: Vauhall Astra stock level: 0
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+Please enter your choice > sell
+
+Please enter product ID
+
+102
+
+Please enter the amount
+
+30
+Sell product
+Available stock : 18
+102: BMW 6 Series stock level: 18
+Insufficient Stock 18 amount ordered = 30
+Available stock : 0
+102: BMW 6 Series stock level: 0
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Please enter your choice > quit

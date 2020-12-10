@@ -31,12 +31,7 @@ public class StockDemo
          * rename product based on ID
          */
         int id = FIRST_ID;
-        if (name.startsWith("Audi"))
-        {
-            id = generator.nextInt(5) + 1;
-            manager.getProduct(id,name);
-            id++;
-        }
+       
         generator = new Random();
         this.manager = manager;
         
@@ -82,12 +77,25 @@ public class StockDemo
         for(int id =101; id <=112; id++)
         
         {
-            amount = generator.nextlnt(5) + 1;
+            amount = generator.nextInt(5) + 1;
             manager.deliverProduct(id,amount);
             amount++;
         }
     
     }
+    
+    private void demoRemove()
+    {
+        printHeading("remove");
+        int amount = 0;
+        for(int id =101; id <=112; id++)
+        {
+            amount = generator.nextInt(5) + 1;
+            //manager.removeProduct(id,amount);
+            amount++;
+        }
+    }
+    
    /**
     * method to sell product usinf a loop 
     */
@@ -107,8 +115,39 @@ public class StockDemo
     }
     
     /**
+     * Method to find a product from a partial name
+     */
+    public void search(String prefix)
+    {
+        int id = FIRST_ID;
+        
+        while(id <=200)
+        {
+            Product product = manager.findProduct(id);
+            if(product != null)
+            {
+                String name = product.getName(). toLowerCase();
+                prefix = prefix.toLowerCase();
+                
+                if(name.contains (prefix))
+                {
+                    System.out.println(product);
+                }
+            }
+            else
+            {
+                //System.out.println("product not found");
+            }
+            id ++;
+            
+            
+        }
+    }
+    
+    /**
      * improve output formatting 
      */
+    
     public void printHeading(String verb)
     
     {

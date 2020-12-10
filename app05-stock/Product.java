@@ -86,32 +86,35 @@ public class Product
         this.name = name;
     }
     
-
     /**
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
     public void sell(int amount)
     {
-        if(quantity >= amount && quantity > 0) 
+        if(amount < 0) 
         
+        {
+            System.out.println("Attempt to sell nagative amount: " + amount + " of " + name);
+        }
+        
+        else if (quantity >= amount && quantity > 0)
         {
             quantity -= amount;
-            System.out.println("Sold" + amount + " of " + name);
+            System.out.println("Sold " + amount + " of " + name);
         }
-        
         else if (amount > quantity && quantity > 0)
-        
         {
-            System.out.println("Insufficient stock level = " + quantity + "amount ordered = " + amount);
+            System.out.println("Insufficient Stock " + quantity + " amount ordered = " + amount);
             quantity = 0;
         }
-        
         else
         {
-            System.out.println("Attempt to sell an out of stock item: " + name);
-        
+            System.out.println( "Attempt to sell an out of stock item: " + name);
         }
+        
+        
+        
         
     }
 }

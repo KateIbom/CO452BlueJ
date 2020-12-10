@@ -1,0 +1,26 @@
+
+******************************
+ Stock Management Application 
+    App05: Kate Turton
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Deliver:    Deliver a quantity of product
+    Sell:   a quantity of product
+    Search:    
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> add
+
+Adding new product
+
+
+Please enter the product ID
+
+> 101
+
+Please enter the name of the product
+
+> 

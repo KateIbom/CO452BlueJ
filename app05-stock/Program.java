@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Program here.
+ * Main class for user input.
  *
  * @author Kate Turton
  * @version 01/12/2020

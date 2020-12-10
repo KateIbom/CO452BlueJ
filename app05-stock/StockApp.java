@@ -5,7 +5,7 @@
  * print and remove stock products
  *
  * @author Student Name
- * @version 0.1
+ * @version 01/12/2020
  */
 public class StockApp
 {
@@ -28,8 +28,9 @@ public class StockApp
     private StockDemo demo = new StockDemo(manager);
 
     
-    /**
-     * 
+    /** this method calls for user choice
+     * and allows the functions suc as quit, input data in lower
+     * case to be performed
      */
     public void run()
     {
@@ -49,6 +50,10 @@ public class StockApp
         }
     }
 
+    
+    /**
+     * This method call constructors from class as a string 
+     */
     private void executeMenuChoice(String choice)
     {
         if(choice.equals(ADD))
@@ -115,6 +120,9 @@ public class StockApp
         }
     }
 
+    /**
+     * method to remove a product from the user interface
+     */
     private void removeProduct()
     {
         System.out.println("\nRemove product\n");
@@ -138,6 +146,9 @@ public class StockApp
         manager.deliverProduct(id, amount);
     }
 
+    /**
+     * Method to sell a product from the main class
+     */
     private void sellProduct()
     {
         int id = input.getInt("\nPlease enter product ID\n");
@@ -163,6 +174,9 @@ public class StockApp
         System.out.println();        
     }
 
+    /**
+     * Method responding to the print all product as a string
+     */
     public void respondToChoice(String choice)
     {
         if (choice.equals("Add"))
